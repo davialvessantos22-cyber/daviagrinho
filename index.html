@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexus — Soluções digitais modernas e inovadoras para o seu negócio." />
+  <title>Nexus | Soluções Digitais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Nexus - Página inicial">
+        <span class="logo__icon" aria-hidden="true"></span>
+        <span class="logo__text">Nexus</span>
+      </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#quiz" class="nav__link">Quiz</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + tema + hambúrguer -->
+      <div class="header__actions">
+        <!-- Botão dark mode -->
+        <button class="btn-theme" id="btnTheme" aria-label="Alternar tema escuro/claro" title="Alternar tema">
+          <span class="btn-theme__icon" id="themeIcon">🌙</span>
+        </button>
+
+        <!-- CTA -->
+        <a href="#contato" class="btn btn--primary header__cta">Fale Conosco</a>
+
+        <!-- Hambúrguer (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-menu__list">
+        <li><a href="#sobre"       class="mobile-menu__link">Sobre</a></li>
+        <li><a href="#servicos"    class="mobile-menu__link">Serviços</a></li>
+        <li><a href="#quiz"        class="mobile-menu__link">Quiz</a></li>
+        <li><a href="#depoimentos" class="mobile-menu__link">Depoimentos</a></li>
+        <li><a href="#contato"     class="mobile-menu__link">Contato</a></li>
+        <li><a href="#contato"     class="btn btn--primary mobile-menu__cta">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio" aria-labelledby="heroTitle">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__badge">✦ Inovação que transforma</span>
+        <h1 class="hero__title" id="heroTitle">
+          Seu negócio no<br/>
+          <span class="hero__title-accent">próximo nível</span>
+        </h1>
+        <p class="hero__subtitle">
+          Estratégias digitais inteligentes, design que converte e tecnologia que escala. Tudo em um só lugar.
+        </p>
+        <div class="hero__actions">
+          <a href="#servicos" class="btn btn--primary btn--lg">Explorar Serviços</a>
+          <a href="#sobre"    class="btn btn--ghost btn--lg">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Ilustração SVG / CSS -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__blob"></div>
+        <svg class="hero__svg" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <!-- Monitor -->
+          <rect x="60" y="60" width="300" height="190" rx="16" class="svg-monitor-body"/>
+          <rect x="80" y="80" width="260" height="150" rx="8" class="svg-screen"/>
+          <!-- Linhas de código na tela -->
+          <rect x="96" y="100" width="120" height="8" rx="4" class="svg-code-line svg-accent"/>
+          <rect x="96" y="116" width="80"  height="8" rx="4" class="svg-code-line svg-muted"/>
+          <rect x="96" y="132" width="150" height="8" rx="4" class="svg-code-line svg-muted"/>
+          <rect x="96" y="148" width="60"  height="8" rx="4" class="svg-code-line svg-accent"/>
+          <rect x="96" y="164" width="100" height="8" rx="4" class="svg-code-line svg-muted"/>
+          <rect x="96" y="180" width="130" height="8" rx="4" class="svg-code-line svg-muted"/>
+          <rect x="96" y="196" width="90"  height="8" rx="4" class="svg-code-line svg-accent"/>
+          <!-- Pé do monitor -->
+          <rect x="185" y="250" width="50"  height="30" rx="6" class="svg-monitor-body"/>
+          <rect x="155" y="278" width="110" height="14" rx="7" class="svg-monitor-body"/>
+          <!-- Floating cards -->
+          <g class="svg-float-1">
+            <rect x="300" y="50" width="100" height="60" rx="12" class="svg-card"/>
+            <circle cx="322" cy="72" r="10" class="svg-accent-fill"/>
+            <rect x="338" y="65" width="50" height="7" rx="3" class="svg-code-line svg-accent"/>
+            <rect x="338" y="78" width="35" height="7" rx="3" class="svg-code-line svg-muted"/>
+          </g>
+          <g class="svg-float-2">
+            <rect x="18" y="200" width="110" height="65" rx="12" class="svg-card"/>
+            <rect x="34"  y="218" width="70" height="7" rx="3" class="svg-code-line svg-accent"/>
+            <rect x="34"  y="231" width="50" height="7" rx="3" class="svg-code-line svg-muted"/>
+            <rect x="34"  y="244" width="65" height="7" rx="3" class="svg-code-line svg-muted"/>
+          </g>
+          <!-- Círculos decorativos -->
+          <circle cx="380" cy="300" r="30" class="svg-circle-deco"/>
+          <circle cx="40"  cy="80"  r="18" class="svg-circle-deco"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+      <span class="hero__scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre section" id="sobre" aria-labelledby="sobreTitle">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Quem somos</span>
+        <h2 class="section__title" id="sobreTitle">Construímos experiências digitais memoráveis</h2>
+        <p class="section__subtitle">
+          Desde 2018 ajudando empresas a crescerem com estratégia, design e tecnologia de ponta.
+        </p>
+      </div>
+
+      <div class="sobre__grid">
+        <!-- Card 1 -->
+        <article class="sobre__card reveal">
+          <div class="sobre__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" class="icon-bg"/>
+              <path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="sobre__card-title">Qualidade Garantida</h3>
+          <p class="sobre__card-text">Entregamos com excelência, rigor técnico e atenção aos detalhes em cada projeto.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="sobre__card reveal">
+          <div class="sobre__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" class="icon-bg"/>
+              <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="sobre__card-title">Agilidade no Prazo</h3>
+          <p class="sobre__card-text">Metodologias ágeis que garantem entregas rápidas sem comprometer a qualidade.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="sobre__card reveal">
+          <div class="sobre__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" class="icon-bg"/>
+              <path d="M18 30c0-3.3 2.7-6 6-6s6 2.7 6 6M24 18a3 3 0 100 6 3 3 0 000-6z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="sobre__card-title">Foco no Cliente</h3>
+          <p class="sobre__card-text">Entendemos profundamente o seu negócio para entregar soluções que realmente funcionam.</p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="sobre__card reveal">
+          <div class="sobre__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" class="icon-bg"/>
+              <path d="M14 34l10-20 10 20M18 28h12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="sobre__card-title">Escalabilidade</h3>
+          <p class="sobre__card-text">Arquiteturas robustas que crescem junto com o seu negócio sem dor de cabeça.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="servicos section" id="servicos" aria-labelledby="servicosTitle">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">O que fazemos</span>
+        <h2 class="section__title" id="servicosTitle">Serviços que impulsionam resultados</h2>
+        <p class="section__subtitle">Uma suite completa de soluções para a sua presença digital.</p>
+      </div>
+
+      <div class="servicos__grid">
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="8" width="32" height="22" rx="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M14 30l-2 4M26 30l2 4M10 34h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="servico__title">Web Design</h3>
+          <p class="servico__text">Interfaces bonitas, intuitivas e orientadas à conversão. Do wireframe ao produto final.</p>
+          <span class="servico__tag">UI/UX</span>
+        </article>
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M8 28l8-16 8 10 5-8 7 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="servico__title">SEO & Performance</h3>
+          <p class="servico__text">Mais visibilidade orgânica, velocidade e ranqueamento para o seu negócio crescer.</p>
+          <span class="servico__tag">Marketing</span>
+        </article>
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2" fill="none"/><path d="M13 20h14M13 14h8M13 26h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="servico__title">Desenvolvimento Web</h3>
+          <p class="servico__text">Aplicações rápidas, seguras e escaláveis com as melhores tecnologias do mercado.</p>
+          <span class="servico__tag">Dev</span>
+        </article>
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 6C12.3 6 6 12.3 6 20s6.3 14 14 14 14-6.3 14-14S27.7 6 20 6z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 12v8l5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="servico__title">Estratégia Digital</h3>
+          <p class="servico__text">Planejamento estratégico com foco em crescimento sustentável e resultados mensuráveis.</p>
+          <span class="servico__tag">Estratégia</span>
+        </article>
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M10 28L20 12l10 16H10z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="20" cy="22" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3 class="servico__title">Brand Identity</h3>
+          <p class="servico__text">Identidade visual coesa que conecta sua marca ao público certo com impacto e personalidade.</p>
+          <span class="servico__tag">Design</span>
+        </article>
+
+        <article class="servico__card reveal">
+          <div class="servico__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="12" height="18" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><rect x="22" y="8"  width="12" height="24" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M10 10v4M26 6v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="servico__title">Analytics & Dados</h3>
+          <p class="servico__text">Transformamos dados em decisões inteligentes para maximizar o seu ROI.</p>
+          <span class="servico__tag">Data</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ ===== -->
+  <section class="quiz section" id="quiz" aria-labelledby="quizTitle">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Teste seus conhecimentos</span>
+        <h2 class="section__title" id="quizTitle">Quiz de Marketing Digital</h2>
+        <p class="section__subtitle">Descubra o quanto você sabe sobre o universo digital.</p>
+      </div>
+
+      <!-- Componente Quiz -->
+      <div class="quiz__box reveal" role="region" aria-live="polite" aria-label="Quiz interativo">
+
+        <!-- Barra de progresso -->
+        <div class="quiz__progress-wrap" aria-hidden="true">
+          <div class="quiz__progress-bar" id="quizProgressBar" style="width:0%"></div>
+        </div>
+        <p class="quiz__progress-text" id="quizProgressText">Pergunta 1 de 6</p>
+
+        <!-- Área de pergunta -->
+        <div class="quiz__question-area" id="quizArea">
+          <h3 class="quiz__question" id="quizQuestion"></h3>
+          <ul class="quiz__options" id="quizOptions" role="list"></ul>
+
+          <div class="quiz__feedback" id="quizFeedback" aria-live="assertive"></div>
+
+          <button class="btn btn--primary btn--lg quiz__next" id="quizNext" style="display:none">
+            Próxima →
+          </button>
+        </div>
+
+        <!-- Resultado final -->
+        <div class="quiz__result" id="quizResult" hidden>
+          <div class="quiz__result-icon" id="quizResultIcon" aria-hidden="true"></div>
+          <h3 class="quiz__result-title" id="quizResultTitle"></h3>
+          <p  class="quiz__result-score" id="quizResultScore"></p>
+          <p  class="quiz__result-msg"   id="quizResultMsg"></p>
+          <button class="btn btn--primary btn--lg" id="quizRestart">Reiniciar Quiz 🔄</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depoimentos section" id="depoimentos" aria-labelledby="depoimentosTitle">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">O que dizem</span>
+        <h2 class="section__title" id="depoimentosTitle">Clientes que confiam em nós</h2>
+        <p class="section__subtitle">Histórias reais de transformação digital.</p>
+      </div>
+
+      <div class="depoimentos__grid">
+
+        <article class="depoimento__card reveal">
+          <div class="depoimento__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depoimento__text">
+            "A Nexus transformou completamente nossa presença online. O novo site aumentou nossas conversões em 140% no primeiro trimestre."
+          </blockquote>
+          <footer class="depoimento__author">
+            <div class="depoimento__avatar" aria-hidden="true">CA</div>
+            <div>
+              <strong class="depoimento__name">Carlos Andrade</strong>
+              <span class="depoimento__role">CEO — Andrade Soluções</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="depoimento__card reveal">
+          <div class="depoimento__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depoimento__text">
+            "Profissionalismo e criatividade inigualáveis. Entregaram além do esperado e dentro do prazo. Recomendo sem hesitar."
+          </blockquote>
+          <footer class="depoimento__author">
+            <div class="depoimento__avatar" aria-hidden="true">ML</div>
+            <div>
+              <strong class="depoimento__name">Marina Lopes</strong>
+              <span class="depoimento__role">Diretora de Marketing — Lopes & Co</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="depoimento__card reveal">
+          <div class="depoimento__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depoimento__text">
+            "Melhor investimento que fizemos em anos. A estratégia de SEO nos levou à primeira página do Google em menos de 3 meses."
+          </blockquote>
+          <footer class="depoimento__author">
+            <div class="depoimento__avatar" aria-hidden="true">RB</div>
+            <div>
+              <strong class="depoimento__name">Ricardo Braga</strong>
+              <span class="depoimento__role">Fundador — TechBraga</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="depoimento__card reveal">
+          <div class="depoimento__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote class="depoimento__text">
+            "A identidade visual criada pela Nexus nos diferenciou completamente no mercado. Nossa marca nunca esteve tão forte."
+          </blockquote>
+          <footer class="depoimento__author">
+            <div class="depoimento__avatar" aria-hidden="true">JF</div>
+            <div>
+              <strong class="depoimento__name">Juliana Farias</strong>
+              <span class="depoimento__role">Fundadora — Studio JF</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contato section" id="contato" aria-labelledby="contatoTitle">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__tag">Entre em contato</span>
+        <h2 class="section__title" id="contatoTitle">Vamos construir algo incrível?</h2>
+        <p class="section__subtitle">Conte-nos sobre o seu projeto e responderemos em até 24h.</p>
+      </div>
+
+      <div class="contato__wrap reveal">
+        <form class="contato__form" id="contatoForm" novalidate aria-label="Formulário de contato">
+
+          <div class="form__group">
+            <label class="form__label" for="nome">Nome completo</label>
+            <input
+              class="form__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              autocomplete="name"
+              required
+            />
+            <span class="form__error" id="nomeError" role="alert"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">E-mail</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            />
+            <span class="form__error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="mensagem">Mensagem</label>
+            <textarea
+              class="form__input form__textarea"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Descreva seu projeto ou dúvida..."
+              rows="5"
+              required
+            ></textarea>
+            <span class="form__error" id="mensagemError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--full">
+            Enviar Mensagem ✉
+          </button>
+
+          <!-- Mensagem de sucesso -->
+          <div class="form__success" id="formSuccess" hidden role="alert">
+            ✅ Mensagem enviada! Entraremos em contato em breve.
+          </div>
+
+        </form>
+
+        <!-- Info lateral -->
+        <div class="contato__info">
+          <div class="contato__info-item">
+            <span class="contato__info-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Localização</strong>
+              <span>São Paulo, SP — Brasil</span>
+            </div>
+          </div>
+          <div class="contato__info-item">
+            <span class="contato__info-icon" aria-hidden="true">✉️</span>
+            <div>
+              <strong>E-mail</strong>
+              <span>contato@nexus.com.br</span>
+            </div>
+          </div>
+          <div class="contato__info-item">
+            <span class="contato__info-icon" aria-hidden="true">📞</span>
+            <div>
+              <strong>Telefone</strong>
+              <span>+55 (11) 99999-0000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="Nexus - Início">
+          <span class="logo__icon" aria-hidden="true"></span>
+          <span class="logo__text">Nexus</span>
+        </a>
+        <p class="footer__tagline">Construindo o futuro digital, hoje.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <h4 class="footer__nav-title">Links</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <h4 class="footer__nav-title">Redes Sociais</h4>
+        <div class="footer__social-links">
+          <!-- SVG icons fictícios -->
+          <a href="#" class="footer__social-link" aria-label="Instagram da Nexus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn da Nexus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.5M12 16v-5M12 11c0-1.1.9-2 2-2s2 .9 2 2v5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter/X da Nexus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M4 4l16 16M4 20L20 4"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="GitHub da Nexus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18c-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 7.43c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Nexus Soluções Digitais. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo" hidden>
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
